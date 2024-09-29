@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doc Hello FHIR OAuth Flow</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/fhirclient/build/fhir-client.js"></script>
+    <script>
+      const search = new URLSearchParams(window.location.search);
+
+      FHIR.oauth2.authorize({
+        client_id: search.get('client_id'),
+        scope: 'PATIENT.READ, PATIENT.SEARCH',
+        redirect_uri: 'https://dochello.surge.sh/success.html',
+        iss: search.get('org_id'),
+      });
+    </script>
+  </body>
+</html>

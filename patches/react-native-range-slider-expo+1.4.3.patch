@@ -1,0 +1,11 @@
+diff --git a/node_modules/react-native-range-slider-expo/src/components/KnobBubble.tsx b/node_modules/react-native-range-slider-expo/src/components/KnobBubble.tsx
+index eab1767..90965af 100644
+--- a/node_modules/react-native-range-slider-expo/src/components/KnobBubble.tsx
++++ b/node_modules/react-native-range-slider-expo/src/components/KnobBubble.tsx
+@@ -1,5 +1,6 @@
+ import React, { useMemo } from 'react';
+ import { Animated, StyleSheet, TextInput, TextStyle } from 'react-native';
++// @ts-ignore
+ import Svg, { Color, Path } from 'react-native-svg';
+ import { osRtl } from './utils';
+ 

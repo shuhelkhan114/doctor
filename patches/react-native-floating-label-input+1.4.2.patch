@@ -1,0 +1,63 @@
+diff --git a/node_modules/react-native-floating-label-input/src/index.tsx b/node_modules/react-native-floating-label-input/src/index.tsx
+index 46c1685..df665f0 100644
+--- a/node_modules/react-native-floating-label-input/src/index.tsx
++++ b/node_modules/react-native-floating-label-input/src/index.tsx
+@@ -1,40 +1,41 @@
+ import React, {
+-  useState,
+-  useRef,
+-  useEffect,
+   forwardRef,
++  useEffect,
+   useImperativeHandle,
++  useRef,
++  useState,
+ } from 'react';
+ import {
+-  View,
+-  TextInput,
+   Image,
++  ImageStyle,
++  LayoutChangeEvent,
++  StyleSheet,
+   Text,
+-  TouchableOpacity,
+-  TextProps,
++  TextInput,
+   TextInputProps,
++  TextProps,
+   TextStyle,
+-  ViewStyle,
+-  ImageStyle,
++  TouchableOpacity,
+   TouchableWithoutFeedback,
+-  LayoutChangeEvent,
+-  StyleSheet,
++  View,
++  ViewStyle,
+ } from 'react-native';
+ import Animated, {
+-  useAnimatedStyle,
+-  withTiming,
+   Easing,
+-  useDerivedValue,
+   interpolateColor,
++  useAnimatedStyle,
++  useDerivedValue,
++  withTiming,
+ } from 'react-native-reanimated';
+ import { styles } from './styles';
+ 
++// @ts-ignore
+ import makeVisibleWhite from './assets/make_visible_white.png';
+-
++// @ts-ignore
+ import makeInvisibleWhite from './assets/make_invisible_white.png';
+-
++// @ts-ignore
+ import makeVisibleBlack from './assets/make_visible_black.png';
+-
++// @ts-ignore
+ import makeInvisibleBlack from './assets/make_invisible_black.png';
+ import { getValueWithCurrencyMask, getValueWithNonCurrencyMask } from './utils';
+ 

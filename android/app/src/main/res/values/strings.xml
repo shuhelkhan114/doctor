@@ -1,0 +1,8 @@
+<resources>
+  <!-- Below line is handled by '@expo/configure-splash-screen' command and it's discouraged to modify it manually -->
+  <string name="expo_splash_screen_resize_mode" translatable="false">cover</string>
+  <string name="app_name">Doc Hello</string>
+  <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
+  <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+  <string moduleConfig="true" name="CodePushDeploymentKey">Vkd22FXgnf8zVaNVLmyQhUObo2LpheLyEmpKA</string>
+</resources>

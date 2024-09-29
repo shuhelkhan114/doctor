@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "userInterfaceStyle": "automatic",
+    "debuggerHost": "localhost:8081",
+    "name": "Doc Hello",
+    "slug": "doc-hello",
+    "version": "1.1.4",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow $(PRODUCT_NAME) to access your contacts, for invite patients"
+        }
+      ],
+      "@notifee/react-native",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {}
+        }
+      ],
+      "newrelic-react-native-agent"
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "buildNumber": "3",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.trudoc.dochello",
+      "icon": "./src/assets/icon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.trudoc.android"
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ce1e6fe6-7118-4502-9733-609d30e8df73"
+      }
+    }
+  }
+}

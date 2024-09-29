@@ -1,0 +1,21 @@
+{
+  "cSpell.words": [
+    "Doximity",
+    "drugbank",
+    "FHIR",
+    "FHIRO",
+    "GAEASCREEN",
+    "Meds",
+    "Messageinput",
+    "NEWSFEED",
+    "notifee",
+    "Pressable",
+    "speciality",
+    "venmo",
+    "VOCALMD"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  }
+}
